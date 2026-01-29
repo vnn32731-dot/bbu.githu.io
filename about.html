@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Bright University - About Us</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #0a2a8f, #113dc2);
+  color: #fff;
+  position: relative;
+}
+
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.title h1 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.title p {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffd27d;
+}
+
+.nav-menu a.active {
+  color: #ffd27d;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-toggle:hover {
+  color: #ffd27d;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  min-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-top: 10px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: #0a2a8f;
+  color: white;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  width: 120px;
+}
+
+.search-box span {
+  cursor: pointer;
+}
+
+/* About Us Section */
+.about-section {
+  background: linear-gradient(135deg, #0a2a8f, #113dc2);
+  padding: 60px 40px;
+  color: white;
+  min-height: 90vh;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  color: #0a2a8f;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* History Section */
+.history-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.history-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.history-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Footer */
+.footer {
+  background: #0a3ab9;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="BBU pic.png" alt="Logo" class="logo">
+    <div class="title">
+      <h1>Build Bright University</h1>
+      <p style="font-family: Khmer OS Muol Light;">សាកលវិទ្យាល័យបៀលប្រាយ</p>
+    </div>
+  </div>
+
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <span class="dropdown-toggle">More ▾</span>
+      <div class="dropdown-menu">
+        <a href="#programs">Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#news">News</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search...">
+    <span>🔍</span>
+  </div>
+</header>
+
+<!-- About Us Section -->
+<section class="about-section">
+  <div class="about-header">
+    <h1>About Our University</h1>
+    <p>Building Bright Futures through Excellence & Innovation</p>
+  </div>
+
+  <div class="cards-container">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To provide high-quality education and professional training that prepares students to meet national and international standards, fostering innovation and leadership in their chosen fields.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To be a leading higher education institution in the region, recognized for academic excellence, research, and contributions to social development.</p>
+    </div>
+
+    <div class="card">
+      <h3>Core Values</h3>
+      <p>Integrity, Excellence, Innovation, and Community. We foster quality and ethical values that guide every student and faculty member at BBU.</p>
+    </div>
+  </div>
+
+  <div class="history-section">
+    <h2>Our History</h2>
+    <p>Founded with the goal of expanding educational opportunities, Build Bright University has grown into one of the most prestigious institutions in the country. With modern campuses and thousands of successful graduates, we continue to lead the way in higher learning.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 BBU | Student Profile Page
+</footer>
+
+</body>
+</html>

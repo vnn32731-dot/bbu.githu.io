@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Bright University - Home</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #0a2a8f, #113dc2);
+  color: #fff;
+  position: relative;
+}
+
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.title h1 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.title p {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffd27d;
+}
+
+.nav-menu a.active {
+  color: #ffd27d;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-toggle:hover {
+  color: #ffd27d;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  min-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-top: 10px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: #0a2a8f;
+  color: white;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  width: 120px;
+}
+
+.search-box span {
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-image: url(pic.jpg);
+}
+
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.profile-card h2 {
+  text-align: center;
+  color: #1c2faa;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Info rows */
+.info div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  background: rgba(0, 68, 255, 0.1);
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.info span:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background: #0a3ab9;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="BBU pic.png" alt="Logo" class="logo">
+    <div class="title">
+      <h1>Build Bright University</h1>
+      <p style="font-family: Khmer OS Muol Light;">សាកលវិទ្យាល័យបៀលប្រាយ</p>
+    </div>
+  </div>
+
+  <nav class="nav-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <span class="dropdown-toggle">More ▾</span>
+      <div class="dropdown-menu">
+        <a href="#programs">Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#news">News</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search...">
+    <span>🔍</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="profile-card">
+    <h2>Welcome to BBU</h2>
+    <p class="subtitle">Student Information</p>
+
+    <div class="info">
+      <div><span>Name:</span><span>Vann</span></div>
+      <div><span>Room:</span><span>404</span></div>
+      <div><span>Tel:</span><span>011 668 185</span></div>
+      <div><span>Year:</span><span>2</span></div>
+      <div><span>Semester:</span><span>2</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 BBU | Student Profile Page
+</footer>
+
+</body>
+</html>
